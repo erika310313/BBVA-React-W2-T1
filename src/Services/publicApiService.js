@@ -6,8 +6,13 @@ const config = {
     }
 }
 
-const Get = () => {
-    axios.get('https://jsonplaceholder.typicode.com/users', config)
+const Get = (endpoint, id="") => { 
+
+    if(!endpoint) {
+        console.log("El endpoint no fue definido");
+    }
+
+    axios.get(`https://ongapi.alkemy.org/api/${endpoint}${id}`, config)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }
