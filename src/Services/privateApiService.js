@@ -18,4 +18,6 @@ const Post = (endpoint, body) => {
     .catch(err => console.log(err))
 }  
 
+/* probando codigo */
+
 export default {Get, Post}; 
