@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+//import logo from './logo.svg';
+//import { Counter } from './features/counter/Counter';
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import ActivitiesForm from './Components/Activities/ActivitiesForm';
@@ -13,6 +13,7 @@ import SchoolCampaign from './Campaigns/School/SchoolCampaign';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
+import LoginForm from './Components/Auth/LoginForm';
 
 function App() {
   return (
@@ -30,11 +31,13 @@ function App() {
           <Route path="/create-project" component={ProjectsForm} />
           <Route path="/school-campaign" component={SchoolCampaign} />
           <Route path="/toys-campaign" component={ToysCampaign} />
+
+          <Route path="/login-form" component={LoginForm} />
         </Switch>
       </BrowserRouter>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -76,7 +79,7 @@ function App() {
           >
             React Redux
           </a>
-        </span>
+        </span> */}
       </header>
     </div>
     </>
