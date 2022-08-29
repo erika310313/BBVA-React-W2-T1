@@ -3,23 +3,29 @@ import axios from 'axios';
 const config = {
     headers: {
         Group: 1,                //Aqui va el ID del equipo!!
-        /* octal literals are not allowed in strict mode. */
     }
 }
 
-const Get = async (endpoint, id="") => { 
+const baseUrl = "https://ongapi.alkemy.org/api/";
+
+const Get = async (endpoint) => { 
 
     if(!endpoint) {
-        console.log("El endpoint no fue definido");
+        throw new Error ("El endpoint no fue definido");
     }
 
-    return await axios.get(`https://ongapi.alkemy.org/api/${endpoint}/${id}`, config)
+    let apiUrl = baseUrl + endpoint;
+
+    return await axios.get(apiUrl, config)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }
 
 const post = (endpoint,object) => {
-    axios.post(`https://ongapi.alkemy.org/api/${endpoint}`,object)
+
+    let apiUrl = baseUrl + endpoint 
+
+    axios.post(apiUrl, object)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }

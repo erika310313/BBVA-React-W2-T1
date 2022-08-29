@@ -5,18 +5,21 @@ let token = localStorage.getItem('token')  /* local o session? */
 const config = {
     headers: {
         Group: 1,                //Aqui va el ID del equipo!!
-        /* octal literals are not allowed in strict mode. */
         Authorization: 'Bearer ' + token
     }
 }
 
-const Get = async (endpoint, id="") => {
+const baseUrl = "https://ongapi.alkemy.org/api/";
+
+const Get = async (endpoint) => {
 
     if(!endpoint) {
         console.log("El endpoint no fue definido");
     }
 
-    return await axios.get(`https://ongapi.alkemy.org/api/${endpoint}/${id}`, config)
+    let apiUrl = baseUrl + endpoint;
+
+    return await axios.get(apiUrl, config)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }
