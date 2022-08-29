@@ -14,14 +14,14 @@ const baseUrl = "https://ongapi.alkemy.org/api/";
 const Get = async (endpoint) => {
 
     if(!endpoint) {
-        console.log("El endpoint no fue definido");
+        throw new Error ("El endpoint no fue definido");
     }
 
     let apiUrl = baseUrl + endpoint;
 
     return await axios.get(apiUrl, config)
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
+    .then(res => res)
+    .catch(err => err)
 }
 
 export default Get

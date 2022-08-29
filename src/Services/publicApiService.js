@@ -17,8 +17,8 @@ const Get = async (endpoint) => {
     let apiUrl = baseUrl + endpoint;
 
     return await axios.get(apiUrl, config)
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
+    .then(res => res)
+    .catch(err => err)
 }
 
 const post = (endpoint,object) => {
@@ -26,8 +26,8 @@ const post = (endpoint,object) => {
     let apiUrl = baseUrl + endpoint 
 
     axios.post(apiUrl, object)
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
+    .then(res => res)
+    .catch(err => err)
 }
 
-export default Get
+export default {Get, post}
