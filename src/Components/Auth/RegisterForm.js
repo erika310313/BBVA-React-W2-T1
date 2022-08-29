@@ -60,17 +60,18 @@ const RegisterForm = () => {
 
         if (!values.confirmpass) {
             errors.confirmpass = 'Required';
-          } else if (values.password != values.confirmpass) {
+          } else if (values.password !== values.confirmpass) {
             errors.confirmpass = 'Passwords do not match';
         }
-
+        
         return errors;
       };
 
     const formik = useFormik({
         initialValues, 
         validate,
-
+        onSubmit: handleSubmit,
+        onChange: handleChange
     });
 
     return (
