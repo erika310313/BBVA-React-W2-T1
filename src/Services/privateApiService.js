@@ -14,7 +14,7 @@ const baseUrl = "https://ongapi.alkemy.org/api/";
 const Get = async (endpoint) => {
 
     if(!endpoint) {
-        throw new Error ("El endpoint no fue definido");
+        throw new Error ("Endpoint is not defined");
     }
 
     let apiUrl = baseUrl + endpoint;
@@ -25,7 +25,10 @@ const Get = async (endpoint) => {
 }
 
 const Post = (endpoint, body) => {
-    axios.Post(`https://ongapi.alkemy.org/api/${endpoint}`, body)
+
+    let apiUrl = baseUrl + endpoint;
+
+    axios.post(apiUrl, body)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }  
