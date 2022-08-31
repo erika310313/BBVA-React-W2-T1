@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+.gr-header{
+    /* width: 1440px; */
+    display: flex;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gr-logo{
+    position: absolute;
+    width: 100px;
+    height: 52.37px;
+    left: 24px;
+    top: 13.37px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 16px;
+
+    position: absolute;
+    /* width: 915px; */
+    height: 44px;
+    right: 24px;
+    top: 20px;
+
+    border-radius: 20px;
+}
+
+.text-header{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    margin: 0px;
+
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.ellipse8{
+    position: absolute;
+    width: 27.79px;
+    height: 27.79px;
+    left: 63.79px;
+    top: 2.95px;
+}
+
+.rectangle13{
+    position: absolute;
+    width: 27.79px;
+    height: 27.79px;
+    left: 35.79px;
+    top: 2.95px;
+}
+
+.polygon1{
+    position: absolute;
+    width: 37.05px;
+    height: 37.05px;
+    left: 1.05px;
+    top: 2.95px;
+}
+
+.somosmas{
+    position: absolute;
+    width: 99px;
+    height: 25px;
+    left: 0px;
+    top: 27.37px;
+}
+
+.menu-item{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inicio{
+    font-weight: 700;
+}
+
+.login{
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 9px 24px;
+}
+
+.register{
+    padding: 10px 25px;
+    background: #FF0000;
+    border-radius: 20px;
+}
+
+.white{
+    color: #FFFFFF;
+}
