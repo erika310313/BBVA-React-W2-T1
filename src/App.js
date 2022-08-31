@@ -7,7 +7,7 @@ import NewsForm from './Components/News/NewsForm';
 import SlidesForm from './Components/Slides/SlidesForm';
 import TestimonialForm from './Components/Testimonials/TestimonialsForm';
 import UserForm from './Components/Users/UsersForm';
-import SchoolCampaign from './Campaigns/School/SchoolCampaign';
+import SchoolCampaign from './Campaigns/School/Content/Content';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
@@ -37,8 +37,6 @@ function App() {
         </Switch>
          <Footer />
       </BrowserRouter>
-      
-     
 
     </>
   );
