@@ -47,14 +47,13 @@ const RegisterForm = () => {
       
         if (!values.email) {
           errors.email = 'Required';
-        } /* else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(values.email)) {
+        } else if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(values.email)) {
           errors.email = 'Invalid email address';
-        } */ 
+        } 
         
         if (!values.password) {
             errors.password = 'Required';
-          } else if (!/^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{6,}$/i.test(values.password)) {
-            /* /^(?=.*\s)/ validación para no permitir espacios */
+          } else if (!/^(?=.*[A-Za-z])(?=.*[0-9])(?=.*\s)(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{6,}$/i.test(values.password)) {
             errors.password = 'Invalid password';
           }
 

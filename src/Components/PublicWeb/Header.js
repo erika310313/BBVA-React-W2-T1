@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Header.css';
+import './Header.css';
 import rectangle from '../../images/rectangle13.svg';
 import polygon from '../../images/polygon1.svg';
 import ellipse from '../../images/ellipse8.svg';
