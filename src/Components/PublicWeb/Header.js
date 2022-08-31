@@ -22,36 +22,28 @@ function Header(){
             </div>
               <ul className='menu'>
                 <li className='menu-item'>
-                  <a className="text-header inicio" href='#'>Inicio</a>
-                  {/* <Link className="text-header" to="/inicio">Inicio</Link> */}
+                  <Link className="text-header inicio" to="/">Inicio</Link>
                 </li>
                 <li className='menu-item'>
-                  <a className="text-header" href="#">Nosotros</a>
-                  {/* <Link className="text-header" to="/nosotros">Nosotros</Link> */}
-                </li>
+                  <Link className="text-header" to="/about-us">Nosotros</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Novedades</a>
-                  {/* <Link className="text-header" to="/novedades">Novedades</Link> */}
-                </li>
+                  <Link className="text-header" to="/news">Novedades</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Testimonios</a>
-                  {/* <Link className="text-header" to="/testimonios">Testimonios</Link> */}
-                </li>
+                  <Link className="text-header" to="/testimonies">Testimonios</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href="#">Contacto</a>
-                  {/* <Link className="text-header" to="/contacto">Contacto</Link> */}
-                </li>
+                  <Link className="text-header" to="/contact-us">Contacto</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Campañas</a>
-                  {/* <Link className="text-header" to="/campanias">Campañas</Link> */}
-                </li>
-                <li className='menu-item login'>
-                  <a className="text-header" href='#'>Log In</a>
-                  {/* <Link className="text-header" to="/login">Log In</Link> */}
+                  <Link className="text-header" to="/campaign">Campañas</Link>
+                </li> {/* falta */}
+                <li className='menu-item'>
+                  <Link className="text-header login" to="/login-form">Log In</Link>
                 </li>
                 <li className='menu-item register'>
-                  <a className="text-header white" href="#">Registrate</a>
-                  {/* <Link className="text-header" to="/register">Registrate</Link> */}
+                  <Link className="text-header white" to="/register-form">Registrate</Link>
                 </li>
               </ul>
           </nav>
