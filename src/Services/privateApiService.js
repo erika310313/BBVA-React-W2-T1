@@ -24,4 +24,10 @@ const Get = async (endpoint) => {
     .catch(err => err)
 }
 
-export default Get
+const Post = (endpoint, body) => {
+    axios.Post(`https://ongapi.alkemy.org/api/${endpoint}`, body)
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+}  
+
+export default {Get, Post}; 
