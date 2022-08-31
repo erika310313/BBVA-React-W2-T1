@@ -1,6 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import { Counter } from './features/counter/Counter';
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import ActivitiesForm from './Components/Activities/ActivitiesForm';
@@ -13,10 +11,10 @@ import SchoolCampaign from './Campaigns/School/SchoolCampaign';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
+import Footer from './Components/PublicWeb/Footer/Footer';
 import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
 import LoginForm from './Components/Auth/LoginForm';
-
 
 function App() {
   return (
@@ -37,7 +35,11 @@ function App() {
 
           <Route path="/login-form" component={LoginForm} />
         </Switch>
+         <Footer />
       </BrowserRouter>
+      
+     
+
     </>
   );
 }
