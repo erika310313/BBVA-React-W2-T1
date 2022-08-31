@@ -2,8 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { useState , useEffect } from 'react';
 import './Footer.scss';
-import logo from '../../../img/logo-sm.svg';
-import circle from '../../../img/circle.svg';
+import logo from '../../img/logo-sm.svg';
+import circle from '../../img/circle.svg';
 
 function Footer () {
 
@@ -25,11 +25,11 @@ function Footer () {
     <>
      <div className='footer'>
 
-        { list && 
+        {/* { list && 
         
-           list.map((oneData, item) => {
-                return(
-                    <>
+           list((oneData, item) => {
+                return( */}
+                    
                     <div className='line1'></div>
                     <img src={logo} alt="logo" />
                     <div className='line2'></div>
@@ -53,9 +53,8 @@ function Footer () {
 
                     <p>2022 by Alkemy. All Rights Reserved.</p>
                     
-                    </>
-                )
-          })}
+                {/* )
+          })} */}
         
     </div>
     

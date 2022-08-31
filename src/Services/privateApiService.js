@@ -25,11 +25,9 @@ const Get = async (endpoint) => {
 }
 
 const Post = (endpoint, body) => {
-    axios.ost(`https://ongapi.alkemy.org/api/${endpoint}`, body)
+    axios.Post(`https://ongapi.alkemy.org/api/${endpoint}`, body)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }  
-
-/* probando codigo */
 
 export default {Get, Post}; 

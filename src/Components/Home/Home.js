@@ -1,5 +1,7 @@
+import { Carousel } from "bootstrap";
 import React from "react";
-import bienvenida from "../img/bienvenida.png";
+import bienvenida from "../../img/bienvenida.png";
+import Carrusel from "./Carrusel";
 
 
 function Home() {
@@ -18,6 +20,8 @@ function Home() {
                     </div>                    
                 </div>
             </div>
+
+            <Carrusel/>
         </>
     )
 }

@@ -11,15 +11,17 @@ import SchoolCampaign from './Campaigns/School/Content/Content';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
-import Footer from './Components/PublicWeb/Footer/Footer';
+import Footer from './Components/PublicWeb/Footer';
 import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
 import LoginForm from './Components/Auth/LoginForm';
+import Header from './Components/PublicWeb/Header';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Header/>
         <Switch>
           <Route path="/" exact component={Home} />           {/* Esta ruta debe ser para el Home */}
           <Route path="/create-activity" component={ActivitiesForm} />
