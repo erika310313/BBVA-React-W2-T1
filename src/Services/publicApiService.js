@@ -21,7 +21,7 @@ const Get = async (endpoint) => {
     .catch(err => err)
 }
 
-const post = (endpoint,object) => {
+const Post = (endpoint, object) => {
 
     let apiUrl = baseUrl + endpoint 
 
@@ -30,4 +30,4 @@ const post = (endpoint,object) => {
     .catch(err => err)
 }
 
-export default {Get, post}
+export default {Get, Post}
