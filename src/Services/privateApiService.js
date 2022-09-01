@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let token = localStorage.getItem('token')  /* local o session? */
+let token = localStorage.getItem('token');  /* local o session? */
 
 const config = {
     headers: {
