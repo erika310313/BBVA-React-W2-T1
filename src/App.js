@@ -11,12 +11,13 @@ import SchoolCampaign from './Campaigns/School/Content/Content';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
+import Header from './Components/PublicWeb/Header';
+import LoginForm from './Components/Auth/LoginForm';
+import About from './Components/About/About';
 import Footer from './Components/PublicWeb/Footer';
 import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
-import LoginForm from './Components/Auth/LoginForm';
 import RegisterForm from './Components/Auth/RegisterForm';
-import Header from './Components/PublicWeb/Header';
 import Activities from './Components/Activities/Activities';
 
 function App() {
@@ -43,9 +44,11 @@ function App() {
 
           <Route path="/campaign" component={SchoolCampaign} />
           <Route path="/school-campaign" component={SchoolCampaign} />
-          <Route path="/toys-campaign" component={ToysCampaign} />
 
+          <Route path="/toys-campaign" component={ToysCampaign} />
           <Route path="/login-form" component={LoginForm} />
+          <Route path="/about" component={About} />
+          <Route path="/about-us" component={About} />
           <Route path="/register-form" component={RegisterForm} />
         </Switch>
         <Footer />

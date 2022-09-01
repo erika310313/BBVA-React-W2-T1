@@ -1,0 +1,52 @@
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.finish {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.container__p-date, .container__p-hour, .container__p-place {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container__p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img_principal {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.container__h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #FF0000;
+    margin-left: 100px;
+    border-radius: 10px;
+    line-height: 48px;
+    font-weight: 600;
+    width: 200px;
+}

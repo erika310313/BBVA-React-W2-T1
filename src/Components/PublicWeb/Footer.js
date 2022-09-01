@@ -1,9 +1,14 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import './Footer.scss';
 import logo from '../../img/logo-sm.svg';
-import circle from '../../img/circle.svg';
+import face from '../../img/social-facebook.png';
+import ig from '../../img/social-instagram.png';
+import twitter from '../../img/social-twitter.png';
+import youtu from '../../img/social-youtube.png';
+
 
 function Footer () {
 
@@ -30,24 +35,36 @@ function Footer () {
            list((oneData, item) => {
                 return( */}
                     <div className='line1'></div>
-                    <img src={logo} alt="logo" />
+                    <img src={logo} alt="logo" className='logo' />
                     <div className='line2'></div>
                     <ul>
-                    <li>Inicio</li>
-                    <li>Nosotros</li>
-                    <li>Novedades</li>
-                    <li>Testimonios</li>
-                    <li>Contacto</li>
+                    <li><Link className="text-header" to="/">Inicio</Link></li>
+                    <li><Link className="text-header" to="/about-us">Nosotros</Link></li>
+                    <li> <Link className="text-header" to="/news">Novedades</Link></li>
+                    <li><Link className="text-header" to="/testimonies">Testimonios</Link></li>
+                    <li><Link className="text-header" to="/contact-us">Contacto</Link></li>
                     <li>Contribuye</li>
                     </ul>
 
                     <div className="line3"></div>
 
                     <ul>
-                    <li><img src={circle} alt="circle" /></li>
-                    <li><img src={circle} alt="circle" /></li>
-                    <li><img src={circle} alt="circle" /></li>
-                    <li><img src={circle} alt="circle" /></li>
+                    <li><a href="https://es-la.facebook.com/">
+                         <img src={face} alt="circle" className='icon' />
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/">
+                        <img src={ig} alt="circle" className='icon' />
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/?lang=es">
+                        <img src={twitter} alt="circle" className='icon' />
+                        </a>
+                    </li>
+                    <li><a href="https://www.youtube.com/">
+                        <img src={youtu} alt="circle" className='icon' />
+                        </a>
+                    </li>
                     </ul>
 
                     <p>2022 by Alkemy. All Rights Reserved.</p>

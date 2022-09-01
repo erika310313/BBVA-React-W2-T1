@@ -8,29 +8,41 @@
         display: flex;
         justify-content: center;
         gap: 40px;
+        padding: 3rem 0 2rem;
     }
 
     ul:nth-child(6){
-        gap:20px;
+        gap:10px;
+        padding: 2rem;
+
+        li{
+            display:contents;
+        }
+
+        a{
+            display: contents;
+        }
     }
 
     .line1{
-        /* position: absolute; */
+        position: relative;
         width: 43%;
         left: 0%;
         right: 0%;
         border: 1px solid #000000; 
-        top: 2rem; 
+        top: 5.4rem;
+    
     }
 
     .line2{
-        /* position: absolute; */
+        position: absolute;
         width: 43%;
         left: 0%;
         right: 0%;
         border: 1px solid #000000; 
         left: auto;
-        top: 2rem;
+    
+
     }
 
     .line3{
@@ -38,6 +50,21 @@
         left: 0%;
         right: 0%;
         border: 1px solid #000000;
+    }
+
+    p{
+        margin: 0;
+        padding: 0 2rem 9rem;
+    }
+
+    .logo{
+        padding: 2rem 0 0;
+        position: relative;
+        top: 1rem;
+    }
+
+    .icon{
+        width: 3%;
     }
 
 }
