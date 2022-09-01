@@ -102,6 +102,13 @@
     padding: 9px 24px;
 }
 
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .register{
     padding: 10px 25px;
     background: #FF0000;
