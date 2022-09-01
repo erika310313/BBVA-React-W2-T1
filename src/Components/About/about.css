@@ -21,3 +21,15 @@
 .img_about {
     width: 100%;
 }
+
+.btn {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #FF0000;
+    margin-left: 500px;
+    margin-top: 66px;
+    border-radius: 10px;
+    line-height: 48px;
+    font-weight: 600;
+    width: 200px;
+}

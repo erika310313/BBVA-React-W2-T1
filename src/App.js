@@ -33,11 +33,10 @@ function App() {
           <Route path="/create-member" component={MembersForm} />
           <Route path="/create-project" component={ProjectsForm} />
           <Route path="/school-campaign" component={SchoolCampaign} />
-          <Route path="/toys-campaign" component={ToysCampaign} />
 
+          <Route path="/toys-campaign" component={ToysCampaign} />
           <Route path="/login-form" component={LoginForm} />
-          <Route path="/nosotros" component={About} />
-          <Route path="/nosotros" component={About} />
+          <Route path="/about" component={About} />
         </Switch>
       </BrowserRouter>
     <div className="App">

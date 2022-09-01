@@ -2,10 +2,16 @@ import React from 'react';
 import Countdown, {calcTimeDelta} from 'react-countdown';
 import './content.css'
 import img_campaign from './images/img_toys.png'
+import { useHistory } from 'react-router-dom';
 
 const Content = () => {
   const Completionist = () => <span>¡Empieza la campaña!</span>;
   const date = calcTimeDelta("2023-01-01");
+  const history = useHistory();
+
+  const handleClick = (e) => {
+    history.push ('/'); 
+  }
 
   return (
     <>
@@ -59,6 +65,7 @@ const Content = () => {
         </Countdown>
         </p>
       </div>
+      <button onClick={handleClick} className='btn'>Ir al inicio</button>
     </>
   );
 }
