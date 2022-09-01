@@ -1,7 +1,7 @@
 import React from 'react';
 import Countdown, {calcTimeDelta} from 'react-countdown';
 import './content.css'
-import img_campaign from './images/campaign-big-item.jpg'
+import img_campaign from './images/img_toys.png'
 
 const Content = () => {
   const Completionist = () => <span>¡Empieza la campaña!</span>;
@@ -9,6 +9,7 @@ const Content = () => {
 
   return (
     <>
+      <h2 className='title'>Campaña de juguetes</h2>
       <div className="container">
         <img src={img_campaign} alt='campaign' className='img_principal'/>
         <p className="container__p"><b>Descripción:</b> lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
@@ -31,6 +32,12 @@ const Content = () => {
           Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
           Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
+          Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
+          Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
+          Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
           Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo perferendis dolores maxime minus maiores? Sed eligendi recusandae eaque.
           Magni corrupti nihil molestias cupiditate. Impedit, similique commodi odit natus perferendis cum.

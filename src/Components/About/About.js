@@ -23,7 +23,7 @@ const About = () => {
         <>
             <Header />
             <img src={imgAbout} alt='about' className='img_about'/>
-            <p className='short'>{about.short_description}</p>
+            <p className='short'><b>{about.short_description}</b></p>
             <p className='long'>{about.long_description}</p>
         </>
     )
