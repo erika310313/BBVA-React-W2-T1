@@ -17,6 +17,7 @@ import './css/bootstrap.min.css';
 import LoginForm from './Components/Auth/LoginForm';
 import RegisterForm from './Components/Auth/RegisterForm';
 import Header from './Components/PublicWeb/Header';
+import Activities from './Components/Activities/Activities';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
       <BrowserRouter>
       <Header />
         <Switch>
-          <Route exact path="/" component={Home} />         
+          <Route path="/" exact component={Home} />
+          <Route path="/activities" component={Activities} />    
+               
           <Route path="/create-activity" component={ActivitiesForm} />
           <Route path="/create-category" component={CategoriesForm} />
           <Route path="/create-news" component={NewsForm} />
