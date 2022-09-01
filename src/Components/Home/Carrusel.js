@@ -22,7 +22,7 @@ function Carrusel(){
 
     const btnNext = () => {
         /* Valido que haya varios elementos hijos para que no rompa */
-        if(slider.current.children.length > 0){
+        if(slider && slider.current.children.length > 0){
 
             const firstSlide = slider.current.children[0];
 
@@ -50,7 +50,7 @@ function Carrusel(){
     }
     
     const btnPrevious = () => {
-        if(slider.current.children.length > 0){
+        if(slider && slider.current.children.length > 0){
 
             const cantSlides = slider.current.children.length -1;
             const lastSlide = slider.current.children[cantSlides];
@@ -71,7 +71,7 @@ function Carrusel(){
         }
     }
 
-    useEffect(()=>{
+    /* useEffect(()=>{
         intervaloSlider.current = setInterval(()=>{
             btnNext();
         }, 5000);
@@ -85,6 +85,10 @@ function Carrusel(){
             }, 5000);
         })
     }, []);
+
+    useEffect (()=>{
+        return intervaloSlider.current = clearInterval(intervaloSlider.current)
+    }, []) */
 
     return(
         <>
