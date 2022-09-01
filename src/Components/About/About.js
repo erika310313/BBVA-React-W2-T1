@@ -3,6 +3,7 @@ import Header from './Header';
 import './about.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import imgAbout from './img/about.png'
 
 const About = () => {
     const [about, setAbout] = useState("");
@@ -21,6 +22,7 @@ const About = () => {
     return (
         <>
             <Header />
+            <img src={imgAbout} alt='about' className='img_about'/>
             <p className='short'>{about.short_description}</p>
             <p className='long'>{about.long_description}</p>
         </>

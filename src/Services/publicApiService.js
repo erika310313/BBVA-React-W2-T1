@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const config = {
     headers: {
-        //Group: 01                //Aqui va el ID del equipo!!
+        Group: 1                //Aqui va el ID del equipo!!
     }
 }
 
@@ -17,10 +17,11 @@ const Get = (endpoint, id="") => {
     .catch(err => console.log(err))
 }
 
-const post = (endpoint,object) => {
+const Post = (endpoint,object) => {
     axios.post(`https://ongapi.alkemy.org/api/${endpoint}`,object)
     .then(res => console.log(res))
     .catch(err => console.log(err))
 }
 
-export default Get
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {Get, Post}

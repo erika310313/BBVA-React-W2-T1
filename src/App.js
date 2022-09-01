@@ -13,6 +13,7 @@ import SchoolCampaign from './Campaigns/School/SchoolCampaign';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
+import Header from './Components/PublicWeb/Header'
 
 import LoginForm from './Components/Auth/LoginForm';
 import About from './Components/About/About';
@@ -21,8 +22,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Header/>
         <Switch>
-          {/* <Route path="/" exact component={} />  Esta ruta debe ser para el Home y prueba*/}
+          {/* <Route path="/" exact component={} /> */}
           <Route path="/create-activity" component={ActivitiesForm} />
           <Route path="/create-category" component={CategoriesForm} />
           <Route path="/create-news" component={NewsForm} />
