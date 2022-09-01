@@ -11,6 +11,7 @@ import SchoolCampaign from './Campaigns/School/Content/Content';
 import ToysCampaign from './Campaigns/Toys/ToysCampaign';
 import MembersForm from './Components/Members/MembersForm';
 import ProjectsForm from './Components/Projects/ProjectsForm';
+import About from './Components/About/About';
 import Footer from './Components/PublicWeb/Footer';
 import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
@@ -43,6 +44,7 @@ function App() {
           <Route path="/toys-campaign" component={ToysCampaign} />
 
           <Route path="/login-form" component={LoginForm} />
+          <Route path="/about-us" component={About} />
           <Route path="/register-form" component={RegisterForm} />
         </Switch>
         <Footer />
