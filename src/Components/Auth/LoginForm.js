@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import '../FormStyles.css';
+import { useHistory } from 'react-router-dom';
 
 
 const LoginForm = () => {
@@ -35,6 +36,8 @@ const LoginForm = () => {
             setInitialValues({...values, password: e.target.value})
         }
     }
+
+    const history = useHistory();
     
     const handleSubmit = (e) => {
         //e.preventDefault();
@@ -46,6 +49,7 @@ const LoginForm = () => {
             password: values.password
         }
         console.log(datosLogin);
+        history.push ('/');
     }
 
     const formik = useFormik ({

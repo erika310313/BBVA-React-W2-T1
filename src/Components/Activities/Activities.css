@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+    padding: 5%;
+}
+
+p{
+    text-align: center;
+}
+
+.btn {
+    margin-top: 5%;
+    display: inline-block;
+    
+}
