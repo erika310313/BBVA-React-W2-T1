@@ -18,7 +18,7 @@ import Footer from './Components/PublicWeb/Footer';
 import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
 import RegisterForm from './Components/Auth/RegisterForm';
-
+import Activities from './Components/Activities/Activities';
 
 function App() {
   return (
@@ -26,7 +26,9 @@ function App() {
       <BrowserRouter>
       <Header />
         <Switch>
-          <Route exact path="/" component={Home} />         
+          <Route path="/" exact component={Home} />
+          <Route path="/activities" component={Activities} />    
+               
           <Route path="/create-activity" component={ActivitiesForm} />
           <Route path="/create-category" component={CategoriesForm} />
           <Route path="/create-news" component={NewsForm} />
