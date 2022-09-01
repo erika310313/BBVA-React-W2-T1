@@ -64,13 +64,15 @@ const LoginForm = () => {
 
 
     return (
-        <form className="form-container" onSubmit={formik.handleSubmit}>
-            <input className="input-field" type="email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter email"></input>
-            {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
-            <input className="input-field" type="password" name="password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter password"></input>
-            {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
-            <button className="submit-btn" type="submit">Log In</button>
-        </form>
+        <div className='col-6 offset-3 py-5'>
+            <form className="form-container" onSubmit={formik.handleSubmit}>
+                <input className="input-field" type="email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter email"></input>
+                {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+                <input className="input-field" type="password" name="password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter password"></input>
+                {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
+                <button className="submit-btn" type="submit">Log In</button>
+            </form>
+        </div>
     );
 }
  
