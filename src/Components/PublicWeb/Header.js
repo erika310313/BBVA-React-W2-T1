@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Header.css';
+import './Header.css';
 import rectangle from '../../images/rectangle13.svg';
 import polygon from '../../images/polygon1.svg';
 import ellipse from '../../images/ellipse8.svg';
@@ -22,36 +22,28 @@ function Header(){
             </div>
               <ul className='menu'>
                 <li className='menu-item'>
-                  <a className="text-header inicio" href='#'>Inicio</a>
-                  {/* <Link className="text-header" to="/inicio">Inicio</Link> */}
+                  <Link to="/" className="text-header inicio">Inicio</Link>
                 </li>
                 <li className='menu-item'>
-                  <a className="text-header" href="#">Nosotros</a>
-                  {/* <Link className="text-header" to="/nosotros">Nosotros</Link> */}
-                </li>
+                  <Link to="/about-us" className="text-header">Nosotros</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Novedades</a>
-                  {/* <Link className="text-header" to="/novedades">Novedades</Link> */}
-                </li>
+                  <Link to="/news" className="text-header">Novedades</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Testimonios</a>
-                  {/* <Link className="text-header" to="/testimonios">Testimonios</Link> */}
-                </li>
+                  <Link to="/testimonies" className="text-header">Testimonios</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href="#">Contacto</a>
-                  {/* <Link className="text-header" to="/contacto">Contacto</Link> */}
-                </li>
+                  <Link to="/contact-us" className="text-header">Contacto</Link>
+                </li> {/* falta */}
                 <li className='menu-item'>
-                  <a className="text-header" href='#'>Campañas</a>
-                  {/* <Link className="text-header" to="/campanias">Campañas</Link> */}
-                </li>
-                <li className='menu-item login'>
-                  <a className="text-header" href='#'>Log In</a>
-                  {/* <Link className="text-header" to="/login">Log In</Link> */}
+                  <Link to="/campaign" className="text-header">Campañas</Link>
+                </li> {/* falta */}
+                <li className='menu-item'>
+                  <Link to="/login-form" className="text-header login">Log In</Link>
                 </li>
                 <li className='menu-item register'>
-                  <a className="text-header white" href="#">Registrate</a>
-                  {/* <Link className="text-header" to="/register">Registrate</Link> */}
+                  <Link to="/register-form" className="text-header white">Registrate</Link>
                 </li>
               </ul>
           </nav>
