@@ -22,28 +22,28 @@ function Header(){
             </div>
               <ul className='menu'>
                 <li className='menu-item'>
-                  <Link className="text-header inicio" to="/">Inicio</Link>
+                  <Link to="/" className="text-header inicio">Inicio</Link>
                 </li>
                 <li className='menu-item'>
-                  <Link className="text-header" to="/about-us">Nosotros</Link>
+                  <Link to="/about-us" className="text-header">Nosotros</Link>
                 </li> {/* falta */}
                 <li className='menu-item'>
-                  <Link className="text-header" to="/news">Novedades</Link>
+                  <Link to="/news" className="text-header">Novedades</Link>
                 </li> {/* falta */}
                 <li className='menu-item'>
-                  <Link className="text-header" to="/testimonies">Testimonios</Link>
+                  <Link to="/testimonies" className="text-header">Testimonios</Link>
                 </li> {/* falta */}
                 <li className='menu-item'>
-                  <Link className="text-header" to="/contact-us">Contacto</Link>
+                  <Link to="/contact-us" className="text-header">Contacto</Link>
                 </li> {/* falta */}
                 <li className='menu-item'>
-                  <Link className="text-header" to="/campaign">Campañas</Link>
+                  <Link to="/campaign" className="text-header">Campañas</Link>
                 </li> {/* falta */}
                 <li className='menu-item'>
-                  <Link className="text-header login" to="/login-form">Log In</Link>
+                  <Link to="/login-form" className="text-header login">Log In</Link>
                 </li>
                 <li className='menu-item register'>
-                  <Link className="text-header white" to="/register-form">Registrate</Link>
+                  <Link to="/register-form" className="text-header white">Registrate</Link>
                 </li>
               </ul>
           </nav>

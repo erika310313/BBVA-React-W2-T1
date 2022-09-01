@@ -29,7 +29,6 @@ function Footer () {
         
            list((oneData, item) => {
                 return( */}
-                    
                     <div className='line1'></div>
                     <img src={logo} alt="logo" />
                     <div className='line2'></div>
@@ -52,15 +51,10 @@ function Footer () {
                     </ul>
 
                     <p>2022 by Alkemy. All Rights Reserved.</p>
-                    
                 {/* )
           })} */}
-        
     </div>
-    
-    
     </>
-   
   );
 }
  

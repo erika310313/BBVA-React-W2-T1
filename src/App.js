@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
       <Header />
         <Switch>
-          <Route path="/" exact component={Home} />         
+          <Route exact path="/" component={Home} />         
           <Route path="/create-activity" component={ActivitiesForm} />
           <Route path="/create-category" component={CategoriesForm} />
           <Route path="/create-news" component={NewsForm} />
