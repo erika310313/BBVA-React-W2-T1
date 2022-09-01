@@ -32,7 +32,7 @@ const About = () => {
             <img src={imgAbout} alt='about' className='img_about'/>
             <p className='short'><b>{about.short_description}</b></p>
             <p className='long'>{about.long_description}</p>
-            <button onClick={handleClick} className='btn'>Ir al inicio</button>
+            <button onClick={handleClick} className='btn_about'>Ir al inicio</button>
         </>
     )
 }
