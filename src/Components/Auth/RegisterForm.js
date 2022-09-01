@@ -75,11 +75,16 @@ const RegisterForm = () => {
 
     return (
         <form className="form-container" onSubmit={formik.handleSubmit}>
-            <input className="input-field" type="text" name="name" value={formik.initialValues.name} onChange={formik.handleChange} placeholder="Enter name"></input>
-            <input className="input-field" type="text" name="lastName" value={formik.initialValues.lastName} onChange={formik.handleChange} placeholder="Enter last name"></input>
-            <input className="input-field" type="text" name="email" value={formik.initialValues.email} onChange={formik.handleChange} placeholder="Enter email"></input>
-            <input className="input-field" type="text" name="password" value={formik.initialValues.password} onChange={formik.handleChange} placeholder="Enter password"></input>
-            <input className="input-field" type="text" name="confirmpass" value={formik.initialValues.confirmpass} onChange={formik.handleChange} placeholder="Confirm password"></input>
+            <input className="input-field" type="text" name="name" value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter name"></input>
+            {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
+            <input className="input-field" type="text" name="lastName" value={formik.values.lastName} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter last name"></input>
+            {formik.touched.lastName && formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}
+            <input className="input-field" type="text" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter email"></input>
+            {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+            <input className="input-field" type="password" name="password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter password"></input>
+            {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
+            <input className="input-field" type="password" name="confirmpass" value={formik.values.confirmpass} onChange={formik.handleChange} placeholder="Confirm password"></input>
+            {formik.touched.confirmpass && formik.errors.confirmpass ? <div>{formik.errors.confirmpass}</div> : null}
             <button className="submit-btn" type="submit">Register</button>
         </form>
     );
