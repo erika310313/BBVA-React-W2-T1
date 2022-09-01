@@ -11,6 +11,15 @@ const config = {
 
 const baseUrl = "https://ongapi.alkemy.org/api/";
 
+const Put = async (url, body) => {
+    let urlFinal = baseUrl + url;
+  
+    return await axios
+      .put(urlFinal, body)
+      .then((response) => response.data)
+      .catch((error) => error);
+  }
+
 const Get = async (endpoint) => {
 
     if(!endpoint) {
@@ -33,4 +42,6 @@ const Post = (endpoint, body) => {
     .catch(err => console.log(err))
 }  
 
-export default {Get, Post}; 
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {Get, Post, Put}; 
+
