@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import '../FormStyles.css';
-import { useHistory } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 
 const LoginForm = () => {
@@ -28,8 +28,6 @@ const LoginForm = () => {
     };
 
     const handleChange = (e) => {
-        let a = e.target.value
-        console.log(a)
         if(e.target.name === 'email'){
             setInitialValues({...values, email: e.target.value})
         } if(e.target.name === 'password'){
@@ -37,19 +35,16 @@ const LoginForm = () => {
         }
     }
 
-    const history = useHistory();
+    const fakeToken = 1234;
     
     const handleSubmit = (e) => {
-        //e.preventDefault();
-        console.log(values);
-        localStorage.setItem('token', 'tokenValueExample')
-
+        e.preventDefault();
+        localStorage.setItem('token', fakeToken)
         const datosLogin = {
             email: values.email,
             password: values.password
         }
         console.log(datosLogin);
-        history.push ('/');
     }
 
     const formik = useFormik ({
@@ -62,10 +57,13 @@ const LoginForm = () => {
         onSubmit: handleSubmit
     });
 
+    let token = localStorage.getItem('token')
 
     return (
+        <>
+        { token && <Redirect replace to='/' />}
         <div className='col-6 offset-3 py-5'>
-            <form className="form-container" onSubmit={formik.handleSubmit}>
+            <form className="form-container" onSubmit={handleSubmit}>
                 <input className="input-field" type="email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter email"></input>
                 {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
                 <input className="input-field" type="password" name="password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Enter password"></input>
@@ -73,6 +71,7 @@ const LoginForm = () => {
                 <button className="submit-btn" type="submit">Log In</button>
             </form>
         </div>
+        </>
     );
 }
  
