@@ -1,0 +1,29 @@
+.card-testi{
+    justify-content: center;
+    gap: 3rem; 
+
+    div.col-sm-2{
+        border-radius: 20px;
+        background-color: #FDFFA4;
+        border: 1px solid #F9FE00;
+    }
+
+    .card-head{
+
+        padding: 1rem 1rem 0;
+
+        .img-card{
+        width: 75px;
+        }
+    }
+    
+
+    .card-body{
+
+        h2{
+            font-size: 1rem;
+        }
+    }
+}
+
+

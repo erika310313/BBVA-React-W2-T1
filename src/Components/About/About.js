@@ -28,11 +28,16 @@ const About = () => {
 
     return (
         <>
-            <Header />
+        
+        
+            <h3 className='header__h3'>Nosotros</h3>
             <img src={imgAbout} alt='about' className='img_about'/>
-            <p className='short'><b>{about.short_description}</b></p>
+         <div className="info-about">
+            <p className='short'>{about.short_description}</p>
             <p className='long'>{about.long_description}</p>
             <button onClick={handleClick} className='btn_about'>Ir al inicio</button>
+         </div>
+            
         </>
     )
 }

@@ -1,20 +1,28 @@
 import React from "react";
 import ContactUs from "../../img/ContactUs.jpg";
 
+import './Contact.scss';
+
 function Contact() {
 
     return(
         <>
             <div>
-                <h1>Información general sobre la ONG</h1>
+                <h2 className="title-contact" >Información general sobre la ONG</h2>
 
                 <img src={ContactUs} className="contact-img" alt="" />
 
-                <p><b>Datos de contacto:</b></p>
-                <p><b>● Mail:</b> somosfundacionmas@gmail.com</p>
-                <p><b>● Instagram:</b> SomosMás</p>
-                <p><b>● Facebook:</b> Somos_Más</p>
-                <p><b>● Teléfono de contacto:</b> 1160112988</p>
+                <div className="card border-dark" >
+                  <h2 className="card-header">Datos de contacto:</h2>
+                    <div className="card-body text-dark">
+                        <ul>
+                            <li class="card-text">Mail: somosfundacionmas@gmail.com</li>
+                            <li class="card-text">Instagram: SomosMás</li>
+                            <li class="card-text">Facebook: Somos_Más</li>
+                            <li class="card-text">Teléfono de contacto: 1160112988</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </>
     )

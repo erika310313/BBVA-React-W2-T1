@@ -1,8 +1,7 @@
 import { Link, useHistory } from 'react-router-dom';
 import './Header.css';
-import rectangle from '../../images/rectangle13.svg';
-import polygon from '../../images/polygon1.svg';
-import ellipse from '../../images/ellipse8.svg';
+import logo from '../../img/logo-sm.svg';
+
 
 function Header(){
 
@@ -23,16 +22,10 @@ function Header(){
     <header>
         <nav className='gr-header'>
           <div className='gr-logo'>
-            <div className='ellipse8'>
-              <img src={ ellipse } className="#" alt="logo" />
-            </div>
-            <div className='rectangle13'>
-              <img src={ rectangle } className="#" alt="logo" />
-            </div>
-            <div className='polygon1'>
-              <img src={ polygon } className="#" alt="logo" />
-            </div>
-            <p className='text-header somosmas'>SOMOS MAS</p>
+              <a href='/'>
+                <img src={ logo } className="#" alt="logo" />
+              </a>
+              
           </div>
             <ul className='menu'>
               <li className='menu-item'>

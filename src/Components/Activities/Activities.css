@@ -1,25 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
-h1{
+.title-actv{
+    font-family: 'Poppins';
+    font-style: normal;
     text-align: center;
-    padding: 2%;
+    margin: 4rem;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .img-fluid{
     width: 100%;
 }
 
-h3{
-    text-align: center;
-    padding: 5%;
+h3.program-actv{
+    padding: 3%;
+    padding-left: 1%;
 }
 
 p{
     text-align: justify;
+    font-size: 20px;
 }
 
-.btn {
-    margin-top: 5%;
-    display: inline-block;
-    
+.btn-actv.btn-danger{
+    padding: 20px 40px;
+    background: #FF0000;
+    color: #ffffff  ;
+    border: 1px solid #FF0000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 15%;
 }
+
+.btn-actv.btn-danger > .text-header{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.btn-actv.btn-danger > .text-header {
+    color: #ffffff;
+}
+
