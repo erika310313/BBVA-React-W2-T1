@@ -19,6 +19,8 @@ import Home from './Components/Home/Home';
 import './css/bootstrap.min.css';
 import RegisterForm from './Components/Auth/RegisterForm';
 import Activities from './Components/Activities/Activities';
+import Testimonials from './Components/Testimonials/Testimonials';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
       <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/activities" component={Activities} />    
+          <Route path="/activities" component={Activities} />   
+          <Route path="/testimonials" component={Testimonials} /> 
+          <Route path="/contact-us" component={Contact} /> 
                
           <Route path="/create-activity" component={ActivitiesForm} />
           <Route path="/create-category" component={CategoriesForm} />
