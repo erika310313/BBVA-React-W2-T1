@@ -4,7 +4,10 @@
     h1{
         font-family: 'Poppins';
         font-style: normal;
-        margin: 2rem 0;
+        text-align: center;
+        margin: 4rem;
+        font-size: 50px;
+        font-weight: 700;  
     }
 
     button{
@@ -24,6 +27,14 @@
         list-style: none;
         padding: 0;
         margin: 2rem 0;
+
+        li{
+            font-size: 2rem;            
+        }
+    }
+
+    .countdown{
+        margin: 4rem;
     }
 
     span{
