@@ -42,10 +42,10 @@ function Header(){
                 <Link to="/about-us" className="text-header">Nosotros</Link>
               </li> 
               <li className='menu-item'>
-                <Link to="/news" className="text-header">Novedades</Link>
+                <Link to="/activities" className="text-header">Actividades</Link>
               </li> 
               <li className='menu-item'>
-                <Link to="/testimonies" className="text-header">Testimonios</Link>
+                <Link to="/testimonials" className="text-header">Testimonios</Link>
               </li> 
               <li className='menu-item'>
                 <Link to="/contact-us" className="text-header">Contacto</Link>

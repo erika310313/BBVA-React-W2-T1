@@ -14,7 +14,7 @@ function Activities() {
                 <div className="row">
                     
                     <div className='content-school "container-sm"'>
-                        <h1>Actividades</h1>
+                        <h1>Actividad de la ONG</h1>
                             <div id="carouselExampleIndicators" className="carousel" data-bs-ride="carousel">
                                 <div className="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -49,9 +49,19 @@ function Activities() {
 
                 </div>
                 <div className="row">
-                    <h3>Nombre de la Actividad</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis vel mi id fermentum. Duis sit amet lacinia enim, vel fringilla diam. Mauris luctus lacus justo, non aliquam elit malesuada sit amet. Etiam maximus ut nisi nec commodo. Nullam lectus leo, tristique vitae pellentesque id, blandit ac eros. Suspendisse eu sapien sagittis, tincidunt velit accumsan, blandit felis. Mauris viverra nisl convallis, malesuada lacus a, finibus lacus. Suspendisse massa tellus, placerat eu quam a, eleifend pharetra nunc.
-                        Aenean non mi id odio convallis aliquet. Ut imperdiet est eros, non molestie mauris venenatis in. Suspendisse mattis mauris ut faucibus ultricies. Vivamus id feugiat eros. Aenean malesuada iaculis nibh, nec vehicula nibh imperdiet et. Praesent id semper tortor. Sed sed metus sagittis, viverra neque a, blandit orci. Pellentesque et tincidunt tellus, eu vehicula dolor. Donec hendrerit enim non tortor posuere scelerisque. Ut lacinia ante ac porttitor fermentum. Maecenas consequat, diam sed scelerisque iaculis, nisi tellus commodo leo, quis placerat urna est ut sem. Vivamus ultricies, est vitae iaculis accumsan, orci odio vehicula sapien, ultrices vestibulum diam quam ac mi. Donec et sodales purus. Donec pulvinar felis sed metus iaculis, sed faucibus neque viverra. Nunc nisl felis, maximus nec mollis sit amet, varius a sem.</p>
+                    <h3>Programas Educativos</h3>
+                    <p> Mediante nuestros programas educativos, buscamos incrementar la capacidad intelectual, moral y afectiva de las personas de acuerdo con la cultura y las normas de convivencia de la sociedad a la que pertenecen.</p>
+                    <p><b> Apoyo Escolar para el nivel Primario:</b> El espacio de apoyo escolar es el corazón del área educativa. Se realizan los talleres de lunes a jueves de 10 a 12 horas y de 14 a 16 horas en el contraturno, Los sábados también se realiza el taller para niños y niñas que asisten a la escuela doble turno. Tenemos un espacio especial para los de 1er grado 2 veces por semana ya que ellos necesitan atención especial! Actualmente se encuentran inscriptos a este programa 150 niños y niñas de 6 a 15 años. Este taller está pensado para ayudar a los alumnos con el material que traen de la escuela, también tenemos una docente que les da clases de lengua y matemática con una planificación propia que armamos en Manos para nivelar a los niños y que vayan con más herramientas a la escuela.</p>
+                    <p><b>Apoyo Escolar Nivel Secundaria:</b> Del mismo modo que en primaria, este taller es el corazón del área secundaria. Se realizan talleres de lunes a viernes de 10 a 12 horas y de 16 a 18 horas en el contraturno. Actualmente se encuentran inscriptos en el taller 50 adolescentes entre 13 y 20 años. Aquí los jóvenes se presentan con el material que traen del colegio y una docente de la institución y un grupo de voluntarios los recibe para ayudarlos a estudiar o hacer la tarea. Este espacio también es utilizado por los jóvenes como un punto de encuentro y relación entre ellos y la institución.</p>
+                    <p><b>Tutorías:</b> Es un programa destinado a jóvenes a partir del tercer año de secundaria, cuyo objetivo es garantizar su permanencia en la escuela y construir un proyecto de vida que da sentido al colegio. El objetivo de esta propuesta es lograr la integración escolar de niños y jóvenes del barrio promoviendo el soporte socioeducativo y emocional apropiado, desarrollando los recursos institucionales necesarios a través de la articulación de nuestras intervenciones con las escuelas que los alojan, con las familias de los alumnos y con las instancias municipales, provinciales y nacionales que correspondan. El programa contempla:</p>
+                    <p>● Encuentro semanal con tutores (Individuales y grupales)</p>
+                    <p>● Actividad proyecto (los participantes del programa deben pensar una actividad relacionada a lo que quieren hacer una vez terminada la escuela y su tutor los acompaña en el proceso)</p>
+                    <p>● Ayudantías (los que comienzan el 2do años del programa deben elegir una de las actividades que se realizan en la institución para acompañarla e ir conociendo como es el mundo laboral que les espera).</p>
+                    <p>● Acompañamiento escolar y familiar (Los tutores son encargados de articular con la familia y con las escuelas de los jóvenes para monitorear el estado de los tutorados)</p>
+                    <p>● Beca estímulo (los jóvenes reciben una beca estímulo que es supervisada por los tutores). Actualmente se encuentran inscriptos en el programa 30 adolescentes.</p>
+                    <p>● Taller Arte y Cuentos: Taller literario y de manualidades que se realizasemanalmente.</p>
+                    <p>● Paseos recreativos y educativos: Estos paseos están pensados para promover la participación y sentido de pertenencia de los niños, niñas y adolescentes al área educativa.</p>
+                        
                         <div>
                             <button className="btn btn-danger"><Link to="/" className="text-header white" >Ir al inicio</Link></button> 
                         </div>

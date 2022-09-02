@@ -40,10 +40,10 @@ function Footer () {
                     <ul>
                     <li><Link className="text-header" to="/">Inicio</Link></li>
                     <li><Link className="text-header" to="/about-us">Nosotros</Link></li>
-                    <li> <Link className="text-header" to="/news">Novedades</Link></li>
-                    <li><Link className="text-header" to="/testimonies">Testimonios</Link></li>
+                    <li><Link className="text-header" to="/activities">Actividades</Link></li>
+                    <li><Link className="text-header" to="/testimonials">Testimonios</Link></li>
                     <li><Link className="text-header" to="/contact-us">Contacto</Link></li>
-                    <li>Contribuye</li>
+                    <li><Link className="text-header" to="/campaign">Campañas</Link></li>
                     </ul>
 
                     <div className="line3"></div>

@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import bienvenidos from "../../img/Bienvenidos.svg";
 import Card from "../Card/Card"
-import CardNews from "../Card/CardNews";
 import CardTestimonials from "../Card/CardTestimonials";
+import CardNews from "../Card/CardNews";
 import "./Home.css"
 
 
@@ -48,15 +48,17 @@ function Home() {
                 </div>
             </div>
 
-            {/* <div className="container">
-                <h3>Testimonios</h3>
-                <CardTestimonials/>
-            </div> */}
-
-            {/* <div className="container">
-                <h3>Ultimas Actividades</h3>
-                <CardNews/>
-            </div> */}
+            <div className="container">
+                <div className="row">
+                    <div className="col-6">
+                        <h3>Actividades</h3>
+                    </div>
+                        {/* <CardNews/> */}
+                    <div className="col">
+                        
+                    </div>
+                </div>
+            </div>
             
         </>
     )
