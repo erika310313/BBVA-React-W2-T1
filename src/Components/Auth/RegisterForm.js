@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../FormStyles.css';
 import { useFormik } from 'formik';
 import { useHistory } from "react-router-dom";
-import apiUrl from "../../Services/publicApiService";
+/* import apiUrl from "../../Services/publicApiService"; */
 
 const RegisterForm = () => {
    
@@ -13,8 +13,6 @@ const RegisterForm = () => {
       password: '',
       confirmpass: ''
   })
-
-  const [formSubmited, setFormSubmited] = useState(false);
 
   const token = localStorage.getItem('token');
   const history = useHistory();
