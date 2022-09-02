@@ -1,0 +1,51 @@
+.card-news{
+
+    width: 100%;
+    margin: 0;
+    
+    gap: 2rem;  
+    justify-content: flex-start;
+
+    div.mb-3{
+        background-color: #7E9AFD;
+        width: 470px;
+        height: 250px;
+        justify-content: center;
+        border: 1px solid #0038FF;
+        border-radius: 20px;
+    }
+    
+    img.img-fluid{
+    width: 100%;
+    }
+
+    .card-text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.015em;
+
+        color: #000000;
+    }
+
+    a{
+        margin: 0%;
+        padding: 10px 47px;
+        background: #0038FF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
+
+

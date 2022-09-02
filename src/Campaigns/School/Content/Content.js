@@ -1,6 +1,6 @@
 import React from 'react';
 import Countdown from 'react-countdown';
-import Campaigns1 from '../img/Campaigns1.jpg';
+import Campaigns1 from '../img/Activities4.jpg';
 import Campaigns2 from '../img/Campaigns2.jpg';
 import Campaigns3 from '../img/Campaigns3.jpg';
 /* import img1 from '../img/campaign-recent-02.jpg';
@@ -14,7 +14,7 @@ function Content () {
 
   return (
     <>
-      <div className='content-school "container-sm"'>
+      <div className='content-school'>
         <h1>Descripcion de la campaña</h1>
         <div id="carouselExampleIndicators" className="carousel" data-bs-ride="carousel">
             <div className="carousel-indicators">
@@ -47,9 +47,12 @@ function Content () {
             <li>Hora</li>
             <li>Lugar</li>
           </ul>
-          <Countdown date={Date.now() + 450000000} > 
-            <Completionist />
-          </Countdown>
+          <div className="countdown">
+             <Countdown date={Date.now() + 450000000} > 
+               <Completionist />
+              </Countdown>
+          </div>
+         
       </div>
     </>
   );
