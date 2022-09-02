@@ -1,15 +1,3 @@
-/* Se importa al componente Inicio */
-
-/* Criterios de aceptación: Se deberá crear un componente Carrusel que renderice los Slides para la pagína de 
-"Inicio", con la finalidad de detallar información sobre la ONG
-La información se mostrára de forma dinámica obtenida del endpoint de Slides. Inicialmente, estos datos serán 
-obtenidos de un array de objetos con las propiedades: image, title y description.
-El componente deberá contener botones a la derecha e izquierda, para realizar la acción de cambiar la información 
-al siguiente o al anterior slide.
-La información de los Slides deberá cambiar automaticamente a los 5 segundos para mostrar el siguiente slide.
-El componente debe ser totalmente responsive */
-
-/* endpoint: 'https://ongapi.alkemy.org/api/slides' */
 import './Carrusel.css'
 import { useRef, useEffect } from 'react';
 import axios from "axios";

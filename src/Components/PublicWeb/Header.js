@@ -9,13 +9,14 @@ function Header(){
   let history = useHistory();
 
   const getToken = () => {
-    return localStorage.getItem('token');
+    if (localStorage.getItem.getToken !== null){
+      return localStorage.getItem('token');
+    } else { return false }
   }
 
   const handleSignOut = () =>{
     localStorage.removeItem('token');
-    
-    history.push('/');
+    history.push('/login-form');
   }
 
   return (
